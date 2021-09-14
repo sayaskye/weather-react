@@ -27,13 +27,13 @@ const Form = ({search, setSearch, setConsulting}) => {
             {error ? <p className="">Ambos campos son obligatorios</p> : null }
             
             <div className="">
-                <label htmlFor="city" className="">Ciudad: </label>
-                <input type="text"  name="city" id="city" value={city} onChange={handleChange}  className=""/>
+                {/* <label htmlFor="city" className=""></label> */}
+                <input type="text"  name="city" id="city" value={city} onChange={handleChange}  className="rounded-full px-3 mx-2 my-1 border-black border-2 text-center py-1 w-60"/>
             </div>
 
             <div className="">
-                <label htmlFor="country" className="">País: </label>
-                <select name="country" id="country" value={country} onChange={handleChange}  className="">
+                {/* <label htmlFor="country" className=""></label> */}
+                <select name="country" id="country" value={country} onChange={handleChange}  className="rounded-full px-3 mx-2 my-1 border-black border-2 text-center py-1 w-60">
                     <option value="">-- Selecciona un país --</option>
                     <option value="US">Estados Unidos</option>
                     <option value="MX">México</option>
@@ -46,7 +46,7 @@ const Form = ({search, setSearch, setConsulting}) => {
             </div>
 
             <div className="">
-                <input type="submit" value="Buscar" className="" />
+                <input type="submit" value="Buscar" className="rounded-full px-3 mx-2 my-1 border-black border-2 text-center py-1 w-28" />
             </div>
         </form>
      );
